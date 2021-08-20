@@ -48,7 +48,8 @@
   "lint-staged": {
     "src/**/*.{html,ts,js,jsx,json,css,scss}": [
       "eslint --cache --fix",
-      "prettier --write"
+      "prettier --write",
+      "git add"
     ]
   }
 }
