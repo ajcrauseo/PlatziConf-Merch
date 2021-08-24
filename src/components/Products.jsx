@@ -14,7 +14,6 @@ const Products = () => {
 
     const newProduct = { ...product, cartId: `${product.id}-${random}` };
 
-    console.log(newProduct);
     addToCart(newProduct);
   };
 

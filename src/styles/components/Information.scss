@@ -18,25 +18,12 @@
   &-back {
     margin: 10px 0 0 0;
     a {
-      background-color: rgb(255, 35, 35);
-      color: #ffffff;
-      padding: 5px 12px;
-      border-radius: 2px;
+      color: rgb(255, 35, 35);
+      padding: 6px 12px;
+      border-radius: 6px;
       &:hover {
-        background-color: rgb(255, 21, 21);
-      }
-    }
-  }
-
-  &-next {
-    margin: 10px 0 0 0;
-    a {
-      background-color: rgb(55, 218, 40);
-      color: #ffffff;
-      padding: 5px 12px;
-      border-radius: 2px;
-      &:hover {
-        background-color: rgb(43, 189, 30);
+        color: rgb(165, 1, 1);
+        background-color: rgba(165, 1, 1, 0.178);
       }
     }
   }
@@ -60,6 +47,7 @@
   }
 
   &-element {
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +96,6 @@
     background-color: #63b8ee;
     border-radius: 6px;
     border: 1px solid #3866a3;
-    display: inline-block;
     cursor: pointer;
     color: #14396a;
     font-family: Arial;
