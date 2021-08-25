@@ -1,7 +1,7 @@
 import React from 'react';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-const GOOGLE_API_KEY = 'AIzaSyCmjvkXB_DMnBUNwxQztLMStyQmA_szbNw';
+const { GOOGLE_API_KEY } = process.env;
 
 const Map = ({ data }) => {
   const mapStyles = {

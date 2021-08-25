@@ -5,13 +5,14 @@ import AppContext from '../context/AppContext';
 
 import '../styles/components/Payment.scss';
 
+const clientId = process.env.PAYPAL_CLIENT_ID;
+
 const Payment = ({ history }) => {
   const { state, addNewOrder } = useContext(AppContext);
   const { cart, buyer } = state;
 
   const paypalOptions = {
-    clientId:
-      'AXmLxA01jyJSKgrpORE3VkgHSTroFLqvwGWWUdsl1I-GHX_ilKMMuYwymG4B9DF1fchS1uiQtP1ukslP',
+    clientId,
     intent: 'capture',
     currency: 'USD',
   };

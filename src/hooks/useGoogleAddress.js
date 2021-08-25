@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const GOOGLE_API_KEY = 'AIzaSyCmjvkXB_DMnBUNwxQztLMStyQmA_szbNw';
+const { GOOGLE_API_KEY } = process.env;
 
 const useGoogleAddress = (address) => {
   const [map, setMap] = useState({});
