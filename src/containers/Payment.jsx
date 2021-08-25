@@ -72,11 +72,7 @@ const Payment = ({ history }) => {
             }
             onSuccess={(details, data) => {
               handlePaymentSuccess(data);
-              console.log(data);
-              console.log(details);
             }}
-            onError={(error) => console.log(error)}
-            onCancel={(data) => console.log(data)}
           />
         </div>
       </div>
