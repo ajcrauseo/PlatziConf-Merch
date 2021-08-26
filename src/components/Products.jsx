@@ -6,8 +6,7 @@ import AppContext from '../context/AppContext';
 import '../styles/components/Products.scss';
 
 const Products = () => {
-  const { state, addToCart } = useContext(AppContext);
-  const { products } = state;
+  const { products, addToCart } = useContext(AppContext);
 
   const handleAddToCart = (product) => () => {
     const random = Math.floor(Math.random() * 1000);
