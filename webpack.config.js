@@ -55,6 +55,7 @@ module.exports = {
     new EnvironmentPlugin([
       'PAYPAL_CLIENT_ID',
       'GOOGLE_API_KEY',
+      'API_URL'
     ]),
   ],
 };

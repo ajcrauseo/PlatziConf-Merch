@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import initialState from '../initialState';
 
-const { API } = process.env;
+const { API_URL } = process.env;
 
 const useInitialState = () => {
   const [state, setState] = useState(initialState);
   const [products, setProducts] = useState([]);
 
   useEffect(async () => {
-    const response = await axios(API);
+    const response = await axios(API_URL);
 
     setProducts(response.data);
   }, []);
