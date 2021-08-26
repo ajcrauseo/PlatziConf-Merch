@@ -9,7 +9,7 @@ const useInitialState = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(async () => {
-    const response = await axios(`${API}/products`);
+    const response = await axios(API);
 
     setProducts(response.data);
   }, []);
